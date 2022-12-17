@@ -1,0 +1,1 @@
+export default document.querySelector('#router-outlet');  //update our view innerhtml/what user sees
