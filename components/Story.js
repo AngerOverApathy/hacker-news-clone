@@ -1,9 +1,8 @@
-export default function Story(story) {
-    console.log(story)
-    return `
+export default function Story(story) {      //story index exist or return empty string in item.js
+  return `
     <div class="story">
       <div> 
-        <span class="gray">${story.index || " "}</span> //story index exist or return empty string in item.js
+        <span class="gray">${story.index || ""}</span>
         <span class="upvote">▲</span>
         <a href="${story.url}">${story.title}</a>
         <span>(${story.domain})</span>
