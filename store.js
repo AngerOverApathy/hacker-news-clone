@@ -37,10 +37,11 @@ function favoritesReducer (state = initialState, action) {  //state object is de
 }
 
 //sample action
-const action = { type: "ADD_FAVORITE", payload: { favorite: { title: "story1", id: 1 } } } //a payload provides data
+// const action = { type: "ADD_FAVORITE", payload: { favorite: { title: "story1", id: 1 } } } //a payload provides data
 
 const store = createStore(favoritesReducer); //provide createStore with favoriteReducer, returns "store" object
 store.dispatch(action); //will add a favorite
-console.log(store.getState());//gets updated state
+
+// console.log(store.getState());//gets updated state
 
 export default store; //provides object to getState and dispatch

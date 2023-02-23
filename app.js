@@ -1,5 +1,4 @@
 import RouterHandler from "./router.js";
-import store from "./store.js"; 
 
 //onhashchange detects hash in url and its changes
 window.onhashchange = () => {
