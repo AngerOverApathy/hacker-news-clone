@@ -30,8 +30,8 @@ export default async function Item() {
 }
 
 async function getStory() {
-  const storyId = window.location.hash.split('?id=')[1];//get story id from window.location, use split to get id from string, use [1] to get second element 
-  const response = await fetch(`${baseUrl}/item/${storyId}`);//fetch story data
-  const story = await response.json();//respond in json
+  const storyId = window.location.hash.split('?id=')[1]; //get story id from window.location, use split to get id from string, use [1] to get second element 
+  const response = await fetch(`${baseUrl}/item/${storyId}`); //fetch story data
+  const story = await response.json(); //respond in json
   return story;
 }
